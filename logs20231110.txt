@@ -1,0 +1,5 @@
+2023-11-10 06:30:10.480 +09:00 [ERR] 2023-11-10 오전 6:30:10 Object reference not set to an instance of an object.    at lambda_method1(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass90_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at TodoApi.Middlewares.ExcpetionHandleMiddleware.Invoke(HttpContext httpContext) in C:\project\todo\TodoApi\Middlewares\ExceptionHandleMiddleware.cs:line 21 POST /users/todos  

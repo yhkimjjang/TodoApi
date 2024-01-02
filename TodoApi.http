@@ -1,0 +1,20 @@
+@local = localhost:7263
+
+GET https://{{local}}/users/test1/todos
+
+###
+POST https://{{local}}/users/todos
+Content-Type: application/json
+
+{
+    "title": "test"
+    ,"content": "good"
+    ,"createUser": "test1"
+    ,"userId": "test1"
+}
+
+###
+GET https://{{local}}/users/todos
+
+###
+Get https://{{local}}/users/test1/todos/q11by68rzfmtk6rqigxgt6bp
